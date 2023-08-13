@@ -153,6 +153,7 @@
                   <th scope="col">THUMBNAIL</th>
                   <th scope="col">TITLE</th>
                   <th scope="col">DESCRIPTION</th>
+                  <th scope="col">DOC URL</th>
                 </tr>
               </thead>
               <tbody>
@@ -163,6 +164,7 @@
                   </td>
                   <td>{{ major.title }}</td>
                   <td>{{ major.description }}</td>
+                  <td>{{ major.url }}</td>
                 </tr>
               </tbody>
             </table>
@@ -348,6 +350,7 @@ export default {
           var files = await utilities.openFiles()
           var title = prompt('Enter title')
           var description = prompt('Enter description')
+          var url = prompt('Enter Doc URL')
 
           if(files && title && description){
             
@@ -395,11 +398,12 @@ export default {
                 adminPassword: this.store.adminPassword,
                 sheetName,
                 record:{
-                  columns:['id','thumbnail','title','description'],
+                  columns:['id','thumbnail','title','description','url'],
                   values:{
                     thumbnail:res[0].src,
                     title,
-                    description
+                    description,
+                    url
                   }
                   
                 }

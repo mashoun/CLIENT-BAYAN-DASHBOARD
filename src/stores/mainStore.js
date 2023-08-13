@@ -165,6 +165,7 @@ export const useStore = defineStore('store', {
                     "title":  "",
                     "description": "",
                     "index":  "",
+                    "url":""
                 },
             ],
             "partners": [
@@ -186,7 +187,7 @@ export const useStore = defineStore('store', {
     actions: {
 
         getApi() {
-            return 'https://script.google.com/macros/s/AKfycbyxAAknJ6wkv_vR3FZoVNuXwcod_-SOjQiM8yENMCFkx9nhwAf5SzptxPhtWwOtKkt1/exec'
+            return 'https://script.google.com/macros/s/AKfycbxuZfGrOOff0HFKLGVxc-RMnk1QJgBelThn3arNJvlXNksU_QD34FsIfNsV867oVf6q/exec'
         },
         login() {
             return `?userID=${encodeURIComponent(this.userID)}&password=${encodeURIComponent(this.password)}`
