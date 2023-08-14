@@ -202,6 +202,8 @@ export default {
         addUserCourse(){
             if(confirm('Are you sure?')){
                 this.spinner = true
+                this.store.newCourse.domain = this.store.userAccount.profile.domain
+                console.log(this.store.newCourse.domain );
                 fetch(this.store.getApi() + '?&addUserCourse=1',{
                     method:"POST",
                     headers:{
@@ -213,7 +215,7 @@ export default {
                         adminPassword: this.store.adminPassword,
                         userID:this.store.userAccount.profile.userID,
                         newCourse:{
-                            columns:['semester','code','title','description','link','instructor'],
+                            columns:['id','domain','semester','code','title','description','link','instructor'],
                             values:this.store.newCourse
                         }
                     })
