@@ -84,12 +84,14 @@
 
                                     <small class="text-primary ms-1">Select semester</small>
                                     <select :disabled="spinner" class="form-select" v-model="store.newCourse.semester">
-                                        <option value="Semester 1">Semester 1</option>
-                                        <option value="Semester 2">Semester 2</option>
-                                        <option value="Semester 3">Semester 3</option>
-                                        <option value="Semester 4">Semester 4</option>
-                                        <option value="Semester 5">Semester 5</option>
-                                        <option value="Semester 6">Semester 6</option>
+                                        
+                                        <option :value="(new Date().getFullYear())+'-'+(new Date().getFullYear() + 1) + ' FALL SESSION 1'">{{new Date().getFullYear()}}-{{new Date().getFullYear() + 1}} FALL SESSION 1</option>
+                                        <option :value="(new Date().getFullYear())+'-'+(new Date().getFullYear() + 1) + ' FALL SESSION 2'">{{new Date().getFullYear()}}-{{new Date().getFullYear() + 1}} FALL SESSION 2</option>
+                                        <option :value="(new Date().getFullYear())+'-'+(new Date().getFullYear() + 1) + ' SPRING SESSION 1'">{{new Date().getFullYear()}}-{{new Date().getFullYear() + 1}} SPRING SESSION 1</option>
+                                        <option :value="(new Date().getFullYear())+'-'+(new Date().getFullYear() + 1) + ' SPRING SESSION 2'">{{new Date().getFullYear()}}-{{new Date().getFullYear() + 1}} SPRING SESSION 2</option>
+                                        <option :value="(new Date().getFullYear())+'-'+(new Date().getFullYear() + 1) + ' SUMMER SESSION 1'">{{new Date().getFullYear()}}-{{new Date().getFullYear() + 1}} SUMMER SESSION 1</option>
+                                        <option :value="(new Date().getFullYear())+'-'+(new Date().getFullYear() + 1) + ' SUMMER SESSION 2'">{{new Date().getFullYear()}}-{{new Date().getFullYear() + 1}} SUMMER SESSION 2</option>
+                
                                     </select>
 
                                     <hr>
