@@ -133,7 +133,8 @@ export const useStore = defineStore('store', {
             "Doctor of Business Administration in Human Resources Management",
             "Doctor of Business Administration in Logistics Management",
             "Doctor of Business Administration in Luxury Brand Management",
-            "Doctor of Management (DM)"
+            "Doctor of Management (DM)",
+            "Doctor of Business Administration In Accounting (DBA-ACC)"
         ],
 
         website:{
@@ -187,7 +188,7 @@ export const useStore = defineStore('store', {
     actions: {
 
         getApi() {
-            return 'https://script.google.com/macros/s/AKfycbx70AFuHZxnrqgpcPbgE2ap0BR2v0_EOY5ynp7SOV0WDRzZ6_V_ENT2V3y_FT0pzkde/exec'
+            return 'https://script.google.com/macros/s/AKfycbwjhytrepB4cpnnmmkWW1XETaE2cDnQZR0OdeFZBKFCc_X-YZ23zTnOvsxkEJT1fyFj/exec'
         },
         login() {
             return `?userID=${encodeURIComponent(this.userID)}&password=${encodeURIComponent(this.password)}`
