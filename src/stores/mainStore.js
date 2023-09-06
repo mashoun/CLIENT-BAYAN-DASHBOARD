@@ -188,7 +188,7 @@ export const useStore = defineStore('store', {
     actions: {
 
         getApi() {
-            return 'https://script.google.com/macros/s/AKfycbwjhytrepB4cpnnmmkWW1XETaE2cDnQZR0OdeFZBKFCc_X-YZ23zTnOvsxkEJT1fyFj/exec'
+            return 'https://script.google.com/macros/s/AKfycbxMlofbkRWTP_crtDbfFl0IPFk0Q7BsF3lUgGeyEgmvJ8jzsu0-_In3838hBN_B9pAz/exec'
         },
         login() {
             return `?userID=${encodeURIComponent(this.userID)}&password=${encodeURIComponent(this.password)}`

@@ -15,7 +15,7 @@
                             <span v-if="!spinner">Login</span>
                             <span v-else class="spinner-grow spinner-grow-sm"></span>
                         </button>
-                        <small class="fs-x-small">Developed by <a href="https://libancode.com">Libancode</a> - last update 2023-9-6</small>
+                        <small class="fs-x-small">Developed by <a href="https://libancode.com">Libancode</a> - last update 2023-9-6 - version 1.0</small>
                     </aside>
                 </div>
             </div>
