@@ -107,6 +107,8 @@ export const useStore = defineStore('store', {
             "Bachelor of Business Administration (BBA)",
             "Bachelor of Business Administration in Accounting (BBA-Acc)",
             "Master of Business Administration (MBA)",
+            "Master of Business Administration in Project Management",
+            "Master of Business Administration In Strategic Planning",
             "Master of Business Administration in Accounting (MBA-Acc)",
             "Master of Business Administration in Management Information Systems (MIS)",
             "Master of Business Administration in Business Analytics (MBA-BAn)",
@@ -134,7 +136,9 @@ export const useStore = defineStore('store', {
             "Doctor of Business Administration in Logistics Management",
             "Doctor of Business Administration in Luxury Brand Management",
             "Doctor of Management (DM)",
-            "Doctor of Business Administration In Accounting (DBA-ACC)"
+            "Doctor of Business Administration In Accounting (DBA-ACC)",
+            "Doctor of Business Administration In Strategic Planning",
+            "Doctor of Business Administration In Project Management"
         ],
 
         website:{
@@ -188,7 +192,7 @@ export const useStore = defineStore('store', {
     actions: {
 
         getApi() {
-            return 'https://script.google.com/macros/s/AKfycbxMlofbkRWTP_crtDbfFl0IPFk0Q7BsF3lUgGeyEgmvJ8jzsu0-_In3838hBN_B9pAz/exec'
+            return 'https://script.google.com/macros/s/AKfycbxH-V6ViuhbV87JRZKGps5LZUn3C9iUpppuSOdAcSUZWNEsb5G6_REGRwA5dS_dzooJ/exec'
         },
         login() {
             return `?userID=${encodeURIComponent(this.userID)}&password=${encodeURIComponent(this.password)}`
